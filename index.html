@@ -1,62 +1,490 @@
+<!DOCTYPE html>
+
 <html>
 <head>
-<title> welcome page x  </title>
+<title>Hello, my name is Pauline Chi. I'm a Web Developer / Designer </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<style>
+*{box-sizing: border-box}
+
+body{
+    margin: 0;
+    font-size:62.5%;
+}
+
+/* Style the header */
+.header {
+    background-color: #01835f;
+    padding: 80px;
+    text-align: left;
+    font-family: Helvetica;
+    overflow:hidden;
+    padding: 0;
+    border-bottom: 1px solid #7ab7b7;
+    position:relative;
+}
+
+.header h1{
+    font-weight:normal;
+    font-size: xx-large;
+}
+
+.headerL {
+    float:left;
+    padding-left: 80px;
+    vertical-align:middle;
+}
+
+.headerR {
+    vertical-align:middle;
+    float:left;
+    padding-top:2.75%;
+    padding-left: 40px;
+}
+
+.aboveHeader {
+    background-color: #08413c;
+    text-align:center;
+    font-size:1.2em;
+    overflow:hidden;
+    font-family: arial,sans-serif;
+    border-bottom: 1px solid #7ab7b7;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+.aboHeaderL{
+    float: left;
+    overflow:hidden;
+    padding-left: 80px;
+}
+
+.aboHeaderR{
+    float: right;
+    padding-right:60px;
+}
+
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: #8ec196;
+        font-family: arial,sans-serif;
+        padding-left: 70px;
+        font-size:1.2em;
+        border-top: 1px solid #9cebda;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        display: block;
+        color:#000000;
+        text-align: center;
+        padding: 14px 16px;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+    /* Create 2 unequal columns that floats next to each other */
+    /* Left column */
+    .left {
+        width: 65%;
+        float:left;
+        padding-left: 8%;
+        padding-right: 1%;
+        font-family: arial,sans-serif;
+        font-size:x-small;
+        padding-top: 20px;
+    }
+    .right {
+        width: 25%;
+        background-color:#d8ddd1;
+        float: left;
+        padding-right:5%;
+        font-family: arial,sans-serif;
+        font-weight:normal;
+        font-size:x-small;
+        padding-left: 25px;
+        padding-bottom:25px;
+        padding-top: 20px;
+    }
+    header h1 {
+        color:#ffffff;
+    }
+    header h3 {
+    color:#ffffff;
+    }
+    
+    .row h1{
+        margin:0;
+        padding-bottom:4px;
+        padding-top:15px;
+    }
+    .row h3{
+        margin:0;
+        padding-bottom:2px;
+        padding-top:2px;
+    }
+    
+    .subti{
+        font-size:50%;
+        margin:0;
+        padding-bottom:4px;
+    }
+    .row p{
+        margin:0;
+        padding-bottom:2px;
+    }
+    .row ol{
+        margin:0;
+        padding-top:4px;
+        padding-bottom:4px;
+    }
+    .row ul{
+        margin:0;
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        padding-left: 80px;
+        padding-right:20px;
+        padding-bottom:20px;
+    }
+    .left a{
+        color: #327800;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+.right ul li a{
+    text-decoration: none;
+    color: #525254;
+
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+    
+    ul.demo {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 15px;
+    }
+    ul.demo2 {
+        list-style-type: none;
+        margin: 0;
+        padding-left:0px;
+    }
+    .blockquote{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:30px;
+        padding-left:10px;
+        border-left: 2px solid #a3c2a3;
+    }
+
+    /*footer*/
+    .footer {
+        background:#093b2b;
+        padding: 20px;
+        text-align: left;
+        font-family: Helvetica;
+        overflow:hidden;
+        color:#FFFFFF;
+        font-size:xx-small;
+        border-top:2px solid #1e956c;
+    }
+    footer h2{
+        color:#abc2a3;
+    }
+    
+    .link {
+        float:left;
+        padding-left: 80px;
+    }
+    .update {
+        float:left;
+        padding: 0;
+        padding-left: 40px;
+    }
+    .copyright {
+        float:right;
+        text-align: right;
+        padding-top:20px;
+        padding-left: 80px;
+        color:#abc2a3
+    }
+
+
+    .button{
+        float: right;
+        position: absolute;
+        right:0px;
+    }
+
+    </style>
 </head>
-<body bgcolor="#c0ded9" text="white">
 
-<center><H1>Pauline Feixuan Chi</H1></center>
+
+<body>
+
+    <div class ="button" >
+        <button onclick="colors()"> colors </button>
+    </div>
+    
+    <div class="aboveHeader" id ="aboTcolors">
+        <div class="aboHeaderL" style="color:white">
+             Welcome, Guest
+                <a href="#" style="color:#a3c2a3">  Login</a>
+                <a href="#" style="color:#a3c2a3">Sign Up</a>
+        </div>
+        
+        <div class="aboHeaderR" style="color:white">
+                Stay Updated
+                <a href="#" style="color:#a3c2a3">Subscribe via RSS</a>
+                <a href="#" style="color:#a3c2a3">Email updates</a>
+        </div>
+    </div>
+    
+    
+    <div class="header" class="container" id="headercolor" img src="1259108154.jpg">
+        <div class="headerL">
+            <h1 style="color:white">My Blog</h1>
+        </div>
+        <div class="headerR">
+            <h3 style="color:white" > Description of My Blog</h3>
+        </div>
+    </div>
+
+<div class="topnav" id="navbar">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">BLOG</a>
+    <a href="#">CONTACT </a>
+</div>
+
+<div class="row">
+    
+    <div class="left">
+        <h1>Don't Cancel Chuck!</h1>
+        <div class = "subti">
+            on July 01 in <a href="#">General</a> tagged <a href="#">petitions</a> by <a href="#">admin</a>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        
+        
+        <div class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis. </p>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            <a href="#"> Read More</a>
+        </p>
+        
+        <h1>Alien Spacecraft found in New Mexico </h1>
+        <div class="subti">
+            <p>on July 01 in <a href="#">General</a> tagged <a href="#">petitions</a> by <a href="#">admin</a></p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        <ul>
+            <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        </ul>
+        
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        
+        <h1>Ghostly Goo in your Kitchen Sink? </h1>
+        <div class="subti">
+            <p>on July 01 in <a href="#">General</a> tagged <a href="#">petitions</a> by <a href="#">admin</a></p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        <h3 class="headerL4">Header Level 4</h3>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        </ol>
+        
+        <div class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+  
+  
+        <h3 class="headerL3">Header Level 3</h3>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        </ul>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        </ol>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        
+        
+    </div>
+    <div class="right" id="rowR">
+        <h2>Categories</h2>
+        <ul class="demo">
+            <li> <a href="#">General </a> </li>
+            <li> <a href="#">Ghost Sightings </a> </li>
+            <li> <a href="#">UFO Crashes</a></li>
+            <li> <a href="#">Government Coverups</a></li>
+            <li> <a href="#">International Conspiracies</a></li>
+        </ul>
+        
+        <h2>Recent Posts</h2>
+        <ul class="demo">
+            <li>  <a href="#">  Ghost Sighting in Mansion</a></li>
+            <li>  <a href="#">  UFO picked up by satellites</a></li>
+            <li>  <a href="#">  Mutants amoung us?</a></li>
+            <li>  <a href="#">  Bigfoot: Fact or Fiction?</a></li>
+        </ul>
+        
+        <h2>Archives</h2>
+        <ul class="demo">
+            <li><a href="#">    June 2008</a></li>
+            <li><a href="#">    May 2008</a></li>
+            <li><a href="#">    April 2008</a></li>
+            <li><a href="#">   March 2008</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<body onload="draw();">
+<canvas id="myCanvas" width="400" height="300"
+    style="border:1px solid #c3c3c3;">
+    Your browser does not support the canvas element.
+</canvas>
+</body>
+
+<script>
+    function draw(){
+        var canvas = document.getElementById("myCanvas");
+        if (myCanvas.getContext){
+            var ctx = myCanvas.getContext('2d');
+            
+            ctx.beginPath();
+            ctx.moveTo(200, 40);
+            ctx.lineTo(170, 100);
+            ctx.lineTo(230, 100);
+            ctx.closePath();
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(170, 100);
+            ctx.lineTo(230, 100);
+            ctx.lineTo(230, 200);
+            ctx.lineTo(170, 200);
+            ctx.closePath();
+            ctx.stroke();
+            
+            /*left triangle*/
+            ctx.beginPath();
+            ctx.moveTo(170, 200);
+            ctx.lineTo(170, 170);
+            ctx.lineTo(140, 200);
+            ctx.closePath();
+            ctx.stroke();
+            
+            /*right triangle*/
+            ctx.beginPath();
+            ctx.moveTo(230, 200);
+            ctx.lineTo(230, 170);
+            ctx.lineTo(260, 200);
+            ctx.closePath();
+            ctx.stroke();
+        }
+    }
+
+
+function colors(){
+    var color;
+    var color = prompt("Please choose a color (blue or orange) you want to switch to.");
+    if (color == "blue"){
+        // above title
+        document.getElementById("aboTcolors").style.backgroundColor = "#667292";
+        // title
+        document.getElementById("headercolor").style.backgroundColor = "#8d9db6";
+        // nav bar
+        document.getElementById("navbar").style.backgroundColor = "#bccad6";
+        // footer
+        document.getElementById("footer").style.backgroundColor = "#667292";
+        // row right
+        document.getElementById("rowR").style.backgroundColor = "#f1e3dd";
+    }
+    else if(color == "orange"){
+        // above title
+        document.getElementById("aboTcolors").style.backgroundColor = "#e0876a";
+        // title
+        document.getElementById("headercolor").style.backgroundColor = "#f4a688";
+        // nav bar
+        document.getElementById("navbar").style.backgroundColor = "#f9ccac";
+        // footer
+        document.getElementById("footer").style.backgroundColor = "#e0876a";
+        // row right
+        document.getElementById("rowR").style.backgroundColor = "#fbefcc";
+    }
+    else{
+        prompt("You can only choose from blue or pink, please click ok and try again.");
+        return false;
+    }
+}
+</script>
+
+
+<footer class="footer" id="footer">
+    <div class="link">
+        <h2>Links</h2>
+        <ul class="demo2">
+            <li><a href="#"> PSDtuts - Photoshop tutorials</a> </li>
+            <li><a href="#">NetTtus - Web development and design tutorials</a></li>
+            <li><a href="#">VectorTuts - Illustrator and vector tutorials</a></li>
+            <li><a href="#">FlashTuts - Adobe Flash tutorials</a></li>
+        </ul>
+    </div>
+    
+    <div class="update">
+        <h2>Follow our updates</h2>
+        <ul class="demo2">
+            <li><a href="#">Subscribe to RSS Feed</a> </li>
+            <li><a href="#">What is RSS?</a></li>
+            <li><a href="#">Email Updates</a></li>
+        </ul>
+    </div>
+    
+    <div class="copyright">
+        <ul class="demo2">
+            <li> Copyright &#169 2009 </li>
+            <li>All Rights Reserved</li>
+        </ul>
+    </div>
+ </footer>
  
-<center><p> Hello friend, my name is Pauline and I'm currently a student in McGill University, pursing a Joint Major in Computer Science and Mathematics. I have knowledge on algorithms, data structures, and languages that are useful in front-end development, back-end development, software engineering, app development ect. I also have interests in statisctics, data science, and Machine Learning.
-    </p></center>
-
-<center><p> Contact: feixuan.chi@mail.mcgill.ca / mobile: 514-431-0791
-    </p></center>
-
-
-
-
-<center>
-    <a href="http://cs.mcgill.ca/~fchi/comp307hw3/"> Link to my latest web desgin class project</a>
-</center>
-
-
-
-<center>
-    <a href="https://github.com/paulinechi/Swift-Pauline"> Link to my project - mobile app </a>
-    <p> sills using: SWIFT, Xcode; Short intro: As a team of three people, we designed a mobile game similar to Candy Crush, it’s a project for fun. Also a good practice to get familiar with the framework of making mobile game.</p>
-</center>
-
-
-<center>
-    <a href="https://www.instagram.com/paulinechi/?hl=en"> Link to my online art exhibition#1 aka my instagram </a>
-</center>
-
-<center>
-    <a href = "https://paulinechi.tumblr.com/"> Link to my online art exhibition#2 aka my Tumblr account </a>
-</center>
-
-
-
-<center>
-<img src=" https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/13442289_2053501971542586_7334381800745729874_n.jpg?oh=750914854c3cd9facf627e88c86ffe4f&oe=5A43142A"alt="profile_web.jpg" style="width:400px;height:400px;">
-</center>
-
-
-
-
-
-
-
-<center><div class="footer"> created by: Pauline Feixuan Chi </div></center>
-
-
-
-
-
-
-
+ 
+ 
 </body>
 </html>
+
+
+
 
 
 
