@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Blog</title>
+    <title> Eat Love Code;)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <style>
@@ -62,13 +62,24 @@
 
         img {
             float: left;
-
         }
 
         .para1 {
-
             overflow: auto;
+        }
 
+        .para2 {
+            overflow: auto;
+        }
+
+        .para2 img {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            font-weight: bold;
         }
 
 
@@ -89,7 +100,7 @@
             display: block;
             color: #000000;
             text-align: center;
-            padding: 14px 16px;
+            padding: 1px 16px;
         }
 
         /* Change color on hover */
@@ -98,6 +109,7 @@
             background-color: #ddd;
             color: black;
         }
+
 
 
         /* Create 2 unequal columns that floats next to each other */
@@ -117,8 +129,8 @@
         .right {
             width: 25%;
             background-color: #d8ddd1;
-            float: left;
-            padding-right: 5%;
+            float: right;
+            padding-right: 20px;
             font-family: arial, sans-serif;
             font-weight: normal;
             font-size: x-small;
@@ -180,23 +192,30 @@
         .right ul li a {
             text-decoration: none;
             color: #525254;
+
         }
 
         .footer ul li a {
             text-decoration: none;
             color: #fff;
+            font-size: 12px;
+
         }
 
         ul.demo {
             list-style-type: none;
             margin: 0;
             padding-left: 10px;
+            font-size: 12px;
         }
 
         ul.demo2 {
             list-style-type: none;
             margin: 0;
             padding-left: 0px;
+            font-size: 12px;
+            padding-right: 10px;
+
         }
 
         .blockquote {
@@ -211,7 +230,7 @@
 
         .footer {
             background: #093b2b;
-            padding: 20px;
+            padding: 13px;
             text-align: left;
             font-family: Helvetica;
             overflow: hidden;
@@ -255,7 +274,7 @@
 
 <body>
 
-    <div class="aboveHeader" id="aboTcolors">
+    <div class="aboveHeader">
         <div class="aboHeaderL" style="color:white">
             Welcome Friends:)
         </div>
@@ -267,64 +286,188 @@
     </div>
 
 
-    <div class="header" id="headercolor">
+    <div class="header">
         <div class="content">
             <header1 style="font-size:50px; color:#d8ddd1 "> Hello, my name is Pauline Chi, </header1>
             <header2 style="font-size:35px; color:#abc2a3 "> and I'm a Web Developer / designer </header1>
         </div>
     </div>
 
-    <div class="topnav" id="navbar">
-        <a href="#">ABOUT ME</a>
-        <a href="#">EXPERIENCE</a>
-        <a href="#">PROJECT</a>
-        <a href="#">CONTACT </a>
+    <div class="topnav" style="font-size:15px">
+        <a href="website_testing.html#intro">ABOUT ME</a>
+        <a href="website_testing.html#experience">EXPERIENCE</a>
+        <a href="website_testing.html#project ">PROJECT</a>
+        <a href="pic.html">PAINTINGS & PHOTOGRAPHS</a>
+        <a href="website_testing.html#footer">CONTACT </a>
     </div>
 
     <div class="row">
 
         <div class="left">
 
-            <h1>Something about me</h1>
-            <div class="subti">
-                on July 01 in
-                <a href="#">General</a> tagged
-                <a href="#">petitions</a> by
-                <a href="#">admin</a>
-            </div>
 
-            <div class="para1">
-                <p>
-                    <img src="personal_website_pictures/dobson_profile.jpg" style="width:170px;margin-right:15px;"> As a Bachelor of Science undergraduate of McGill’s Computer Science and Math program, I am interested
-                    in Web Development, UI/UX design, data science, AI, and other interesting topics in the computer science
-                    field.
-                    </br>
-                    </br>
-                    After studying four years in Computer Science and Math, I have a solid background in coding, algorithms design, and have
-                    the ability to solve math and logic problems as well. My working and internship experience also gives
-                    me the chance to apply all the knowledge I’ve learned in school to the industry.
-                </p>
+            <div id="intro">
+                <h1>Something about me</h1>
+                <div class="subti">
+                    <a href="https://www.linkedin.com/in/pauline-chi-026727136/">Link to LinkedIn Profile</a>
 
-
-                <div class="blockquote">
-                    <p> I'm also interested in art and entreprenuership </p>
                 </div>
 
-                <p>
-                    <a href="#"> Read More</a>
-                </p>
+                <div class="para1" style="font-size:13px">
+                    <p>
+                        <img src="personal_website_pictures/158443513.jpg" style="width:170px;margin-right:15px;"> As a Bachelor of Science undergraduate of McGill’s Computer Science and Math program, I am interested
+                        in Web Development, UI/UX design, data science, AI, and other interesting topics in the computer
+                        science field.
+                        </br>
+                        </br>
+                        After studying four years in Computer Science and Math, I have a solid background in coding, algorithms design, and have
+                        the ability to solve math and logic problems as well. My working and internship experience also gives
+                        me the chance to apply all the knowledge I’ve learned in school to the industry.
+                    </p>
+
+
+                    <div class="blockquote">
+                        <p> I'm also interested in art and entreprenuership </p>
+                    </div>
+
+                    <p>
+                        <a href="#"> Read More</a>
+                    </p>
+                </div>
 
             </div>
 
             </br>
             </br>
 
-
-          
- 
             </br>
             </br>
 
+
+            <div id="experience">
+                <h1>My Working Experience and Internships</h1>
+                <div class="subti">
+                    <a href="https://www.linkedin.com/in/pauline-chi-026727136/">Link to LinkedIn Profile</a>
+                </div>
+
+                <div class="para2" style="font-size:13px">
+                    <p>
+                        <div class="subtitle">
+                            <b>Web Developer 01/2018 to Current</b>
+                            </br>
+                            <b>PeersIdea – Montreal, Canada</b>
+                            </br>
+                        </div>
+                        PeersIdea is a platform where you can discover cool activities to do with family.</br>
+                        Provided continued maintenance and development of bug fixes and patch sets for existing web applications.</br>
+                        Coordinated with systems partners to finalize designs and confirm requirements.</br>
+
+                        </br>
+                        </br>
+                        <div class="subtitle">
+                            Internship 07/2016 to 08/2016</br>
+                            Sohu Media – Beijing, China</br>
+                        </div>
+                        Educational startup project.</br>
+                        Worked in the front-end development team, helped to code and maintain the website using HTML, CSS, Java and JavaScript.
+                        </br>
+                        </br>
+                        <div class="subtitle">
+                            Member 09/2015 to 09/2016</br>
+                            McGill Robotics – Montreal, QC</br>
+                        </div>
+                        Worked in the planner session of McGill robotics Used SMACH(state machine) and ROS(robotic operating system) to plan and
+                        manage how robot complete tasks, mainly focusing on AUVs(automatic underwater vehicle) and drones.
+                        Volunteering at RoboHacks (first student-organized hardware hackathon), jobs including finding sponsorships
+                        and guiding students during the hackathon.
+                        </br>
+                        </br>
+
+
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/in/pauline-chi-026727136/"> Read More</a>
+                    </p>
+                </div>
+
+            </div>
+
+            </br>
+            </br>
+
+            <div id="project">
+                <h1>Projects Outside School</h1>
+                <div class="subti">
+                    <a href="https://www.linkedin.com/in/pauline-chi-026727136/">Link to LinkedIn Profile</a>
+                </div>
+
+                <div class="para3" style="font-size:13px">
+                    <p>
+                        <div class="subtitle">
+                            HTML | CSS | JavaScript | Node.js | MySQL | JSON | Ajax | jQuery
+                            </br>
+
+                        </div>
+                        RateMyTeammate: A fun side project I made in a weekend for people to rate their teammates, to help other CS students better
+                        select their teammates in future team projects
+
+
+                        </br>
+                        </br>
+                        <div class="subtitle">
+                            HTML | CSS | JavaScript | C | MySQL | Python | PHP | JSON </br>
+                        </div>
+                        HooFoo: a platform we created to connect people who can cook and want to make a profit, and people who want cheap delicious
+                        homemade food.
+
+                        </br>
+                        </br>
+
+                        <div class="subtitle">
+                            SWIFT | Xcode
+                            </br>
+                        </div>
+                        We designed a mobile game similar to Candy Crush, it's a project for fun, as well as a good practice to get familiar with
+                        the framework of making mobile games.
+
+                        </br>
+                        </br>
+
+
+
+                        <div class="subtitle">
+                            Matlab | R | statistics
+                            </br>
+                        </div>
+                        With some help from Coursera (public CS courses), I made anomaly detection project and recommender systems, by applying neural
+                        networks and unsupervised learning algorithms.
+                        </br>
+                        </br>
+
+
+                        <div class="subtitle">
+                            Co-founder of Dobson Match (platform designed to connect students that are interested in entrepreneurship)
+                            </br>
+                        </div>
+
+
+
+                        </br>
+
+
+
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/in/pauline-chi-026727136/"> Read More</a>
+                    </p>
+
+                    </br>
+                    </br>
+                </div>
+
+            </div>
 
 
 
@@ -332,40 +475,29 @@
         <div class="right" id="rowR">
             <h2>Languages:</h2>
             <ul class="demo">
-                <li>
-                    <a href="#">Java, JavaScript, C, C++, R, Python, F#, SWIFT
-                    </a>
-                </li>
+                <li>Java, JavaScript, C, C++, R, Python, F#, SWIFT </li>
             </ul>
 
             <h2>Framework:</h2>
             <ul class="demo">
-                <li>
-                    <a href="#"> HTML5, SLIM, React</a>
+                <li>HTML5, SLIM, React
                 </li>
 
             </ul>
 
             <h2>Web server:</h2>
             <ul class="demo">
-                <li>
-                    <a href="#"> Node.js, XAMPP, flask</a>
-                </li>
-
+                <li>Node.js, XAMPP, flask</li>
             </ul>
 
             <h2>Database:</h2>
             <ul class="demo">
-                <li>
-                    <a href="#"> MySQL, MongoDB</a>
-                </li>
+                <li>MySQL, MongoDB</li>
             </ul>
 
             <h2> Environment&Tools: </h2>
             <ul class="demo">
-                <li>
-                    <a href="#">Matlab, Git, Linux, Unix</a>
-                </li>
+                <li>Matlab, Git, Linux, Unix</li>
             </ul>
 
         </div>
@@ -387,7 +519,6 @@
 
         <div class="copyright">
             <ul class="demo2">
-
                 <li>All Paintings and Photographs Credit to Pauline Chi</li>
             </ul>
         </div>
